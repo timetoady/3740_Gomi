@@ -1,0 +1,30 @@
+body {
+  background-color: #f4f4f4;
+}
+.container {
+  display: grid;
+  gap: 10px;
+}
+.mainMenu {
+  display: flex;
+  background-color: #1bd634;
+}
+.mainMenu li {
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  color: black;
+}
+#flexed {
+  display: flex;
+}
+#links {
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  color: black;
+}
+#gridContainer {
+  display: grid;
+  gap: 10px;
+}

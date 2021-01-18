@@ -1,0 +1,24 @@
+#flexed {
+  display: flex;
+}
+#links {
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  color: black;
+}
+#gridContainer {
+  display: grid;
+  gap: 10px;
+}
+body {
+  background-color: #f4f4f4;
+}
+.mainMenu {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  font-style: normal;
+  color: black;
+  background-color: #1bd634;
+}
