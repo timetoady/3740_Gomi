@@ -1,17 +1,31 @@
 @import "../less/variables.less";
 
-#flexed {
-  display: flex;
+#titleFont{
+  font-family: @titlesFont;
+}
+
+#paraFont{
+  font-family: @commonFont;
+}
+
+#open {
+  display: block;
+  transform: translateY(0%);
+  transition: all 1s ease-in-out;
+  z-index: 100;
+  height: 100vh;
+}
+
+#close {
+  display: none;
+  transform: translateY(-100%);
+  transition: transform 1s ease-in-out, visibility 0s 0.4s;
+  transition: all 1s ease-in-out;
+
 }
 
 #links {
-  text-decoration: none;
   list-style: none;
-  font-style: normal;
-  color: black
+  
 }
 
-#gridContainer {
-  display: grid;
-  gap: 10px;
-}

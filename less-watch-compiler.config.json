@@ -3,8 +3,6 @@
     "outputFolder": "css",
     "minified": false,   
     "sourceMap": false,
-    "plugins": "plugin1,plugin2",
-    "less-args": "option1=1,option2=2",
     "runOnce": false,
     "enableJs": true
 }

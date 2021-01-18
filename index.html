@@ -13,28 +13,34 @@
 <body>
     <div id="container">
         <header>
+            
             <nav class="mainMenu">
-                <div>
+                <div class="aContainer">
+
                     <ion-icon id="menuIcon" name="menu"></ion-icon>
-                        <ul class="links">
-                        <li>HOME</li>
-                        <li>CRUISES</li>
-                        <li>AGENTS</li>
-                        <li>BOOK</li>
+
+                    <div id="searchDiv">
+                        <input id="searchBox" type="search">
+                        <button>
+                            <ion-icon id="searchIcon" name="search"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="menuLinks default">
+                        <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">CRUISES</a></li>
+                        <li><a href="#">AGENTS</a></li>
+                        <li><a href="#">BOOK</a></li>
                     </ul>
                 </div>
-                <div>
-                    <input id="searchBox" type="search">
-                    <button>
-                        <ion-icon id="searchIcon" name="search"></ion-icon>
-                    </button>
-                </div>
-                
-                <div class="logo">
 
                 </div>
+               
             </nav>
 
+            <div class="logo">
+
+            </div>
 
         </header>
 
@@ -51,6 +57,7 @@
         </footer>
     </div>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script type=module src="index.js"></script>
 </body>
 
 </html>
