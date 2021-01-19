@@ -7,18 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Piazzolla:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>Cabot Cruises</title>
 </head>
 
 <body>
-    <div id="container">
+
+    <div id="headerWrapper">
         <header>
-            
+
             <nav class="mainMenu">
                 <div class="aContainer">
-
-                    <ion-icon id="menuIcon" name="menu"></ion-icon>
-
+                    <div>
+                        <ion-icon id="menuIcon" name="menu"></ion-icon>
+                    </div>
                     <div id="searchDiv">
                         <input id="searchBox" type="search">
                         <button>
@@ -27,26 +30,70 @@
                     </div>
                     <div class="menuLinks default">
                         <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">CRUISES</a></li>
-                        <li><a href="#">AGENTS</a></li>
-                        <li><a href="#">BOOK</a></li>
-                    </ul>
-                </div>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">CRUISES</a></li>
+                            <li><a href="#">AGENTS</a></li>
+                            <li><a href="#">BOOK</a></li>
+                        </ul>
+                    </div>
 
                 </div>
-               
+
             </nav>
 
             <div class="logo">
+                <div>
+                    <img srcset="./assets/images/cabotCruises1.png,
+                        ./assets/images/cabotCruises@2x.png 2x,
+                        ./assets/images/cabotCruises@3x.png 3x" src="./assets/images/cabotCruises1.png"
+                        alt="Cabot Cruises Logo">
+                </div>
+
+
+                <div class="numberDiv">
+                    <a href="tel:1-800-555-1234">1-800-555-1234</a>
+                </div>
 
             </div>
 
         </header>
 
-        <div class="slider">
+    </div>
 
+    <div id="container">
+
+        <div class="slider">
+            <div class="slideImageDiv">
+                <picture>
+                    <source media="(max-width: 750px)" srcset="./assets/images/ship1Square.jpg">
+                    <source media="(min-width: 751px)" srcset="./assets/images/ship1Wide.jpg">
+                    <img src="./assets/images/ship1Wide.jpg" alt="Cruise ship on the open sea">
+                </picture>
+            </div>
+            <div class="slideImageDiv">
+                <picture>
+                    <source media="(max-width: 799px)" srcset="./assets/images/ship2Square.jpg">
+                    <source media="(min-width: 800px)" srcset="./assets/images/ship2Wide.jpg">
+                    <img src="./assets/images/ship2Wide.jpg" alt="Cruise ship on the open sea">
+                </picture>
+            </div>
+            <div class="slideImageDiv">
+                <picture>
+                    <source media="(max-width: 799px)" srcset="./assets/images/ship3Square.jpg">
+                    <source media="(min-width: 800px)" srcset="./assets/images/ship3Wide.jpg">
+                    <img src="./assets/images/ship3Wide.jpg" alt="Cruise ship on the open sea">
+                </picture>
+            </div>
+            <div class="slideImageDiv">
+                <picture>
+                    <source media="(max-width: 799px)" srcset="./assets/images/ship4Square.jpg">
+                    <source media="(min-width: 800px)" srcset="./assets/images/ship4SWide.jpg">
+                    <img src="./assets/images/ship4Wide.jpg" alt="Cruise ship on the open sea">
+                </picture>
+            </div>
         </div>
+
+
 
         <div class="">
 
@@ -58,6 +105,10 @@
     </div>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script type=module src="index.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
 </body>
 
 </html>

@@ -1,8 +1,19 @@
-body {
+body,
+footer {
+  margin: 0 auto;
+}
+#container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+div#headerWrapper {
+  width: 100% !important;
+  margin: 0;
   background-color: #f4f4f4;
 }
-.container {
+header {
   display: grid;
+  grid-template-areas: "mainMenu" "theLogo";
 }
 .opened {
   display: block !important;
@@ -18,28 +29,60 @@ body {
   grid-area: theIcon;
   font-size: 2rem;
 }
+.logo {
+  grid-area: theLogo;
+  margin: 1rem auto;
+  max-width: 1200px !important;
+}
+.logo img {
+  max-width: 250px;
+}
+.numberDiv {
+  display: none;
+}
+.slideImageDiv {
+  margin: 0 auto;
+}
+.slideImageDiv img {
+  width: 100%;
+}
+.mainMenu {
+  grid-area: mainMenu;
+  border: 4px solid black;
+  border-left: none;
+  border-right: none;
+  background-color: #FFD700;
+}
 .mainMenu .aContainer {
   display: grid;
-  border: 2px solid black;
+  padding: 0.3rem 0.5rem;
+  margin: 0 auto;
+  background-color: #FFD700;
   justify-content: space-between;
   grid-area: theMenu;
-  grid-template-areas: "theIcon theSearch" "theLinks theLinks";
+  grid-template-areas: "theIcon theSearch";
 }
 .mainMenu #searchDiv {
-  padding: 0.2rem 0.2rem 0 0;
+  padding: 0.2rem;
 }
 .mainMenu #searchDiv #searchBox {
   padding: 0.3rem 0.2rem;
+  border: 3.5px solid black;
 }
 .mainMenu #searchDiv button {
-  background-color: green;
-  padding: 0.3rem 0.2rem;
+  background-color: gold;
+  padding: 0.33rem 0.2rem;
+  outline: black !important;
+  border: 2px solid black;
 }
 .mainMenu .menuLinks {
   padding: 0;
   display: none;
   text-align: center;
-  background-color: #1bd634be;
+  margin: 2.75rem 0 0 -0.5rem;
+  position: absolute;
+  width: 100vw;
+  background-color: #ffd900c0;
   grid-area: theLinks;
 }
 .mainMenu .menuLinks ul {
@@ -47,6 +90,8 @@ body {
 }
 .mainMenu .menuLinks li {
   list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
   font-family: 'Piazzolla', serif;
   font-size: 2rem;
   margin: 1rem 0;
@@ -60,16 +105,48 @@ body {
   grid-area: theSearch;
 }
 @media screen and (min-width: 700px) {
+  header {
+    display: grid;
+    grid-template-areas: "theLogo" "mainMenu";
+  }
   #menuIcon {
     display: none;
   }
+  .logo {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0.2rem auto;
+  }
+  .numberDiv {
+    display: block;
+  }
+  .numberDiv a {
+    list-style: none;
+    text-emphasis: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .mainMenu {
+    background-color: #FFD700;
+  }
   .mainMenu .aContainer {
     grid-template-areas: "theLinks theSearch";
-    background-color: #1bd633;
+    margin-bottom: 0;
+    max-width: 1200px;
+    padding: 0;
   }
   .mainMenu .menuLinks {
     display: block;
-    background-color: none;
+    background-color: #FFD700;
+    margin: 0;
+    position: relative;
+    width: inherit;
   }
   .mainMenu .menuLinks ul {
     display: flex;
@@ -104,4 +181,6 @@ body {
 }
 #links {
   list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
 }

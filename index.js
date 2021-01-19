@@ -48,3 +48,11 @@ window.onresize = function() {
     }
 }
 
+$(document).ready(function(){
+  $('.slider').slick({
+    adaptiveHeight: true,
+    arrows: false,
+    lazyLoad: 'ondemand',
+    dots: true,
+  });
+});
