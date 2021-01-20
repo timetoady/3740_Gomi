@@ -1,0 +1,16 @@
+    {
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"image": "https://hopeful-wright-cbdacb.netlify.app/assets/images/cabotCruises1.png",
+"name": "Cabot Cruises",
+"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "250 N Mill Rd",
+    "addressLocality": "Vineyard",
+    "addressRegion": "UT",
+    "postalCode": "84059",
+    "addressCountry": "US"
+},
+"telephone": "8005551234",
+"openingHours": "Mo-Fr 10:00-19:00"
+    }
