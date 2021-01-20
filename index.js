@@ -49,6 +49,7 @@ document.addEventListener("click", (event) => {
   }
 });
 
+//fixes menu stuck open on size change
 window.onresize = function () {
   if (window.innerWidth >= 700) {
     navLinks.classList.remove("opened");
@@ -62,6 +63,7 @@ window.onresize = function () {
   }
 };
 
+//Slider settings
 $(document).ready(function () {
   $(".slider").slick({
     adaptiveHeight: true,
