@@ -38,7 +38,7 @@ h2 {
   margin: 0 auto;
   max-width: 1200px;
 }
-div#headerWrapper {
+#headerWrapper {
   width: 100% !important;
   margin: 0;
   background-color: #f4f4f4;
@@ -97,7 +97,7 @@ header {
 }
 .mainMenu .aContainer {
   display: grid;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem 0.5rem 0 0.5rem;
   margin: 0 auto;
   background-color: #FFD700;
   justify-content: space-between;
@@ -147,11 +147,22 @@ header {
   grid-area: theSearch;
 }
 .blogsDiv {
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  padding: 0 0.2rem;
+  gap: 10px 0;
+  margin-bottom: 20px;
+}
+.blogsDiv .blogTitle {
+  padding: 0.2rem 0;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+.blogsDiv a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
 }
 .blogsDiv .blog1 {
   background-image: url("../assets/images/blog1Dim.png");
@@ -196,12 +207,21 @@ header {
 .aBlog {
   height: 46vw;
   width: 46vw;
+  text-align: center;
+  position: relative;
 }
-.aBlog a {
-  list-style: none;
-  text-emphasis: none;
-  text-decoration: none;
-  color: black;
+.dateDiv {
+  padding: 0.2rem 0;
+  background-color: rgba(0, 0, 0, 0.404);
+  color: #f4f4f4;
+  position: absolute;
+  bottom: 0;
+  width: 46vw;
+}
+#footerWrapper {
+  width: 100% !important;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 @media screen and (min-width: 700px) {
   header {
@@ -280,9 +300,15 @@ header {
   .blogsDiv {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .blogsDiv a {
+    font-size: 1rem;
+  }
   .aBlog {
     width: 32vw;
     height: 32vw;
+  }
+  .dateDiv {
+    width: 32vw;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -293,6 +319,10 @@ header {
     width: 22vw;
     height: 22vw;
     max-height: 290px;
+    max-width: 290px;
+  }
+  .dateDiv {
+    width: 22vw;
     max-width: 290px;
   }
 }

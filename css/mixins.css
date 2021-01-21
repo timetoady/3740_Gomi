@@ -22,3 +22,8 @@
   text-emphasis: none;
   text-decoration: none;
 }
+#blogBackground {
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  transition: linear 0.2s;
+}

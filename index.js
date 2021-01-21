@@ -33,9 +33,11 @@ agentSubLink.addEventListener("click", () => {
   if (agentSubMenu.classList.contains("close")) {
     agentSubMenu.classList.remove("close");
     agentSubMenu.classList.add("open");
+    agentSubLink.textContent = "AGENTS▼";
   } else {
     agentSubMenu.classList.remove("open");
     agentSubMenu.classList.add("close");
+    agentSubLink.textContent = "AGENTS►"
       }
 });
 
@@ -46,6 +48,7 @@ document.addEventListener("click", (event) => {
     console.log("click outside!")
     agentSubMenu.classList.remove("open");
     agentSubMenu.classList.add("close");
+    agentSubLink.textContent = "AGENTS►"
   }
 });
 
