@@ -1,3 +1,6 @@
+html {
+  margin: 0;
+}
 body,
 footer {
   margin: 0 auto;
@@ -87,9 +90,12 @@ header {
 }
 .mainMenu #searchDiv button {
   background-color: gold;
-  padding: 0.33rem 0.2rem;
+  padding: 0.28rem 0.2rem;
   outline: black !important;
-  border: 2px solid black;
+  border: 3.5px solid black;
+  border-top: 3px solid black;
+  margin-left: -0.5rem;
+  margin-top: -0.2rem;
 }
 .mainMenu .menuLinks {
   padding: 0;
@@ -302,7 +308,11 @@ footer {
     grid-template-areas: "theLinks theSearch";
     margin-bottom: 0;
     max-width: 1200px;
-    padding: 0;
+    padding: 0 0.5rem;
+  }
+  .mainMenu #searchDiv button {
+    padding: 0.28rem 0.2rem;
+    margin-top: 0 !important;
   }
   .mainMenu .menuLinks {
     display: block;

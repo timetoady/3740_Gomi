@@ -2,6 +2,10 @@
 @import "../less/mixins.less";
 
 //General settings
+
+html {
+  margin: 0;
+}
 body,
 footer {
   // background-color: @mainBackgroundColor1;
@@ -12,7 +16,7 @@ h2 {
   font-family: @titlesFont;
 }
 
-p{
+p {
   font-family: @commonFont;
 }
 
@@ -108,9 +112,12 @@ header {
     }
     button {
       background-color: gold;
-      padding: 0.33rem 0.2rem;
+      padding: 0.28rem 0.2rem;
       outline: black !important;
-      border: 2px solid black;
+      border: 3.5px solid black;
+      border-top: 3px solid black;
+      margin-left: -0.5rem;
+      margin-top: -0.2rem;
     }
   }
 
@@ -151,8 +158,6 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 10px 0;
   margin: 20px 10px;
-
-
 
   .blogTitle {
     padding: 0.2rem 0;
@@ -218,26 +223,25 @@ header {
   width: 46vw;
 }
 
-
 //Footer items
 
-footer{
+footer {
   max-width: 1200px;
 }
-#footerWrapper{
+#footerWrapper {
   width: 100% !important;
   margin: 0;
-  padding-left: .2rem;
+  padding-left: 0.2rem;
   background-color: @mainBackgroundColor1;
-  
-  a{
+
+  a {
     #links;
-    color:black;
+    color: black;
   }
-  p{
-    margin: .1rem 0;
+  p {
+    margin: 0.1rem 0;
   }
-  h2{
+  h2 {
     margin-bottom: 0;
   }
 }
@@ -246,34 +250,36 @@ footer{
   opacity: 0;
 }
 
-.contact{
-grid-area: contact;
+.contact {
+  grid-area: contact;
 }
 
-.newsletter{
+.newsletter {
   grid-area: newsletter;
-  button{
+  button {
     width: 98%;
     padding: 1rem;
     border-radius: 20px;
-    margin: .75rem 0;
+    margin: 0.75rem 0;
     font-size: 1rem;
     font-weight: 700;
     background-color: gold;
     outline: black !important;
     border: 4px solid black;
   }
-  input{
+  input {
     width: 50%;
     font-size: 2rem;
     width: 95.5%;
-    margin: .75rem 0;
+    margin: 0.75rem 0;
   }
 }
 
-.whyCabot{grid-area: why}
+.whyCabot {
+  grid-area: why;
+}
 
-.social{
+.social {
   text-align: center;
   //width: 100%;
   background-color: @mainStyleColor;
@@ -281,26 +287,25 @@ grid-area: contact;
   border: 4px solid black;
   border-left: none;
   border-right: none;
-  .socialIcon{
+  .socialIcon {
     font-size: 2rem;
-    &:hover{
+    &:hover {
       color: @accentFontColor1;
     }
   }
 
-  .socialWrapper{
+  .socialWrapper {
     background-color: @mainStyleColor;
     border: 4px solid black;
     border-left: none;
     border-right: none;
   }
-  
 }
 
-.copyright{
-  font-size: .75rem;
+.copyright {
+  font-size: 0.75rem;
   text-align: center;
-  margin: .1rem 0 1rem 0;
+  margin: 0.1rem 0 1rem 0;
 }
 
 //Media query medium
@@ -340,7 +345,16 @@ grid-area: contact;
       grid-template-areas: "theLinks theSearch";
       margin-bottom: 0;
       max-width: 1200px;
-      padding: 0;
+      padding: 0 0.5rem;
+    }
+
+    #searchDiv {
+      
+        button {
+          padding: 0.28rem 0.2rem;
+          margin-top: 0 !important;
+        }
+      
     }
 
     .menuLinks {
@@ -384,17 +398,13 @@ grid-area: contact;
         margin: 0;
       }
     }
-
-
-
+    
   }
-
   .blogsDiv {
     grid-template-columns: 1fr 1fr 1fr;
-    a{
+    a {
       font-size: 1rem;
     }
-    
   }
   .aBlog {
     width: 32vw;
@@ -403,17 +413,17 @@ grid-area: contact;
   .dateDiv {
     width: 32vw;
   }
-  .social{
-    .socialIcon{
+  .social {
+    .socialIcon {
       font-size: 4rem;
     }
-    
   }
-  .footerGrid{
+  .footerGrid {
     display: grid;
     gap: 2px;
-    grid-template-areas: "contact newsletter"
-    "why why";
+    grid-template-areas:
+      "contact newsletter"
+      "why why";
   }
 }
 
@@ -421,7 +431,6 @@ grid-area: contact;
 @media screen and (@largeSize) {
   .blogsDiv {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    
   }
   .aBlog {
     width: 22vw;
@@ -433,8 +442,7 @@ grid-area: contact;
     width: 22vw;
     max-width: 290px;
   }
-  .footerGrid{
-    
+  .footerGrid {
     gap: 10px;
     grid-template-areas: "contact newsletter why";
   }
