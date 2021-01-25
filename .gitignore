@@ -1,0 +1,6 @@
+#nodes and files
+node_modules
+vendor
+
+# Enviroment variables
+.env
