@@ -1,8 +1,7 @@
-<?php $ptitle= 'Cabot Cruises!' include '_top.php'; ?>
-$app->get('/cowsay', function() use($app) {
-  $app['monolog']->addDebug('cowsay');
-  return "<pre>".\Cowsayphp\Cow::say("Cool beans")."</pre>";
-});
+<?php 
+$title= 'Cabot Cruises!';
+include '_top.php'; 
+?>
     <div id="container">
 
         <div class="slider">
