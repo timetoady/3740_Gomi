@@ -311,10 +311,7 @@ footer {
     padding: 0 0.5rem;
   }
   .mainMenu .activeLink {
-    background-color: black;
-  }
-  .mainMenu .activeLink a {
-    color: #FFD700;
+    background-color: #f4f4f48c;
   }
   .mainMenu #searchDiv button {
     padding: 0.28rem 0.2rem;

@@ -77,27 +77,56 @@ $(document).ready(function () {
 });
 
 //Active link
-const setActive = (currentURL) => {
-  let navLinks = document.querySelectorAll("#nav a");
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      console.log(`Clicked link ${link}!`)
-      // let url = link.getAttribute('href');
-      // currentURL.includes(url) ? link.classList.add('activeLink') : link.classList.remove('activeLink')
-    })
+// const setActive = (currentURL) => {
+//   let theNav = document.querySelectorAll(".menuLinks a");
+// [...theNav].forEach((link) => {
+//   link.addEventListener('click', () => {
+//     console.log(`Clicked link ${link}!`)
 
-  });
+//     let url = link.getAttribute('href');
+//     currentURL.includes(url) ? link.classList.add('activeLink') : link.classList.remove('activeLink')
+//   })
 
-};
+// });
+// };
 
+
+// $(function () {
+//   $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
+//     "activeLink"
+//   );
+// });
 
 let theNav = document.querySelectorAll(".menuLinks a");
-[...theNav].forEach((link) => {
-  link.addEventListener('click', () => {
-    console.log(`Clicked link ${link}!`)
-    let url = link.getAttribute('href');
-    let currentURL = window.location.href
-    currentURL.includes(url) ? link.classList.add('activeLink') : link.classList.remove('activeLink')
-  })
-
+window.addEventListener("load", () => {
+  [...theNav].forEach((link) => {
+    let splitLocation = window.location.href.split("/")
+    console.log(splitLocation)
+    let currentPageBit = splitLocation[splitLocation.length - 1]
+    console.log(`Current page stub: ${currentPageBit}`)
+    console.log(`This link: ${link.href}`)
+    link.href.includes(currentPageBit) 
+      ? link.classList.add("activeLink")
+      : link.classList.remove("activeLink");
+  });
 });
+
+// window.addEventListener("load", () => {
+//   // window.location.href.includes(url)
+//   //   ? link.classList.add("activeLink")
+//   //   : link.classList.remove("activeLink");
+//   setTimeout(() => {
+//     [...theNav].forEach((link) => {
+//       let url = link.getAttribute("href");
+//       console.log(url);
+//       console.log(window.location.href);
+//       if (window.location.href.includes(url)) {
+//         link.classList.add("activeLink");
+//         console.log(`added active to ${link}`);
+//       } else {
+//         link.classList.remove("activeLink");
+//         console.log(`Link ${link} not active.`);
+//       }
+//     }, 7000);
+//   });
+// });

@@ -31,7 +31,7 @@
                     <div class="menuLinks default">
                         <ul>
                             <li><a href="index.php">HOME</a></li>
-                            <li><a href="#">CRUISES</a></li>
+                            <li><a href="cruises.php">CRUISES</a></li>
                             <li><a class="agentSubLink" href="#">AGENTS►</a>
                                 <ul class="agentSubMenu close">
                                     <li><a href="#">SECRET AGENTS</a> </li>
