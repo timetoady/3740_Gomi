@@ -27,12 +27,18 @@
   background-size: cover !important;
   transition: linear 0.2s;
 }
+html {
+  margin: 0;
+}
 body,
 footer {
   margin: 0 auto;
 }
 h2 {
   font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-family: 'Piazzolla', serif;
 }
 #container {
   margin: 0 auto;
@@ -113,15 +119,18 @@ header {
 }
 .mainMenu #searchDiv button {
   background-color: gold;
-  padding: 0.33rem 0.2rem;
+  padding: 0.28rem 0.2rem;
   outline: black !important;
-  border: 2px solid black;
+  border: 3.5px solid black;
+  border-top: 3px solid black;
+  margin-left: -0.5rem;
+  margin-top: -0.2rem;
 }
 .mainMenu .menuLinks {
   padding: 0;
   display: none;
   text-align: center;
-  margin: 2.75rem 0 0 -0.5rem;
+  margin: 2.45rem 0 0 -0.5rem;
   position: absolute;
   width: 100vw;
   background-color: #ffd900c0;
@@ -150,7 +159,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 0;
-  margin-bottom: 20px;
+  margin: 20px 10px;
 }
 .blogsDiv .blogTitle {
   padding: 0.2rem 0;
@@ -218,10 +227,80 @@ header {
   bottom: 0;
   width: 46vw;
 }
+footer {
+  max-width: 1200px;
+}
 #footerWrapper {
   width: 100% !important;
   margin: 0;
+  padding-left: 0.2rem;
   background-color: #f4f4f4;
+}
+#footerWrapper a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: black;
+}
+#footerWrapper p {
+  margin: 0.1rem 0;
+}
+#footerWrapper h2 {
+  margin-bottom: 0;
+}
+.spacer {
+  opacity: 0;
+}
+.contact {
+  grid-area: contact;
+}
+.newsletter {
+  grid-area: newsletter;
+}
+.newsletter button {
+  width: 98%;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: gold;
+  outline: black !important;
+  border: 4px solid black;
+}
+.newsletter input {
+  width: 50%;
+  font-size: 2rem;
+  width: 95.5%;
+  margin: 0.75rem 0;
+}
+.whyCabot {
+  grid-area: why;
+}
+.social {
+  text-align: center;
+  background-color: #FFD700;
+  padding: 1rem;
+  border: 4px solid black;
+  border-left: none;
+  border-right: none;
+}
+.social .socialIcon {
+  font-size: 2rem;
+}
+.social .socialIcon:hover {
+  color: #f2f2f2;
+}
+.social .socialWrapper {
+  background-color: #FFD700;
+  border: 4px solid black;
+  border-left: none;
+  border-right: none;
+}
+.copyright {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0.1rem 0 1rem 0;
 }
 @media screen and (min-width: 700px) {
   header {
@@ -258,7 +337,15 @@ header {
     grid-template-areas: "theLinks theSearch";
     margin-bottom: 0;
     max-width: 1200px;
-    padding: 0;
+    padding: 0 0.5rem;
+  }
+  .mainMenu .activeLink {
+    background-color: black;
+    color: #FFD700;
+  }
+  .mainMenu #searchDiv button {
+    padding: 0.28rem 0.2rem;
+    margin-top: 0 !important;
   }
   .mainMenu .menuLinks {
     display: block;
@@ -310,6 +397,14 @@ header {
   .dateDiv {
     width: 32vw;
   }
+  .social .socialIcon {
+    font-size: 4rem;
+  }
+  .footerGrid {
+    display: grid;
+    gap: 2px;
+    grid-template-areas: "contact newsletter" "why why";
+  }
 }
 @media screen and (min-width: 1000px) {
   .blogsDiv {
@@ -324,5 +419,9 @@ header {
   .dateDiv {
     width: 22vw;
     max-width: 290px;
+  }
+  .footerGrid {
+    gap: 10px;
+    grid-template-areas: "contact newsletter why";
   }
 }

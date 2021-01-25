@@ -30,7 +30,7 @@
                     </div>
                     <div class="menuLinks default">
                         <ul>
-                            <li><a href="#">HOME</a></li>
+                            <li><a href="index.php">HOME</a></li>
                             <li><a href="#">CRUISES</a></li>
                             <li><a class="agentSubLink" href="#">AGENTS►</a>
                                 <ul class="agentSubMenu close">
@@ -38,7 +38,6 @@
                                     <li><a href="#">CHANGE AGENTS</a> </li>
                                 </ul>
                             </li>
-
                             <li><a href="#">BOOK</a></li>
                         </ul>
                     </div>

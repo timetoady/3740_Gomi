@@ -37,18 +37,18 @@ agentSubLink.addEventListener("click", () => {
   } else {
     agentSubMenu.classList.remove("open");
     agentSubMenu.classList.add("close");
-    agentSubLink.textContent = "AGENTS►"
-      }
+    agentSubLink.textContent = "AGENTS►";
+  }
 });
 
 document.addEventListener("click", (event) => {
   const isClickInside = agentSubLink.contains(event.target);
-  const isClickInside2 = agentSubMenu.contains(event.target)
+  const isClickInside2 = agentSubMenu.contains(event.target);
   if (!isClickInside && !isClickInside2) {
-    console.log("click outside!")
+    console.log("click outside!");
     agentSubMenu.classList.remove("open");
     agentSubMenu.classList.add("close");
-    agentSubLink.textContent = "AGENTS►"
+    agentSubLink.textContent = "AGENTS►";
   }
 });
 
@@ -76,5 +76,28 @@ $(document).ready(function () {
   });
 });
 
+//Active link
+const setActive = (currentURL) => {
+  let navLinks = document.querySelectorAll("#nav a");
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      console.log(`Clicked link ${link}!`)
+      // let url = link.getAttribute('href');
+      // currentURL.includes(url) ? link.classList.add('activeLink') : link.classList.remove('activeLink')
+    })
+
+  });
+
+};
 
 
+let theNav = document.querySelectorAll(".menuLinks a");
+[...theNav].forEach((link) => {
+  link.addEventListener('click', () => {
+    console.log(`Clicked link ${link}!`)
+    let url = link.getAttribute('href');
+    let currentURL = window.location.href
+    currentURL.includes(url) ? link.classList.add('activeLink') : link.classList.remove('activeLink')
+  })
+
+});
