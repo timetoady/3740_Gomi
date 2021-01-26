@@ -111,13 +111,7 @@ header {
       border: 3.5px solid black;
     }
     button {
-      background-color: gold;
-      padding: 0.28rem 0.2rem;
-      outline: black !important;
-      border: 3.5px solid black;
-      border-top: 3px solid black;
-      margin-left: -0.5rem;
-      margin-top: -0.2rem;
+      #button1;
     }
   }
 
@@ -257,15 +251,8 @@ footer {
 .newsletter {
   grid-area: newsletter;
   button {
+    #button1;
     width: 98%;
-    padding: 1rem;
-    border-radius: 20px;
-    margin: 0.75rem 0;
-    font-size: 1rem;
-    font-weight: 700;
-    background-color: gold;
-    outline: black !important;
-    border: 4px solid black;
   }
   input {
     width: 50%;
@@ -451,5 +438,94 @@ footer {
   .footerGrid {
     gap: 10px;
     grid-template-areas: "contact newsletter why";
+  }
+}
+
+
+//Cruise page
+.pageTitle{
+  font-family: @titlesFont
+}
+
+.gridContainer{
+  #gridIt;
+  gap: 10px;
+}
+
+.cruiseGrid{
+  #gridIt;
+  grid-template-areas: 
+  "theImage"
+  "theText"
+  "theButton";
+}
+
+.cruiseImage{
+  grid-area: theImage;
+  img{
+    max-width: 100%;
+  }
+}
+
+.cruiseText{
+  padding: .2rem;
+  grid-area: theText;
+  h2{
+    font-family: @titlesFont;
+  }
+  p{
+    font-family: @commonFont;
+    margin-bottom: .1rem;
+  }
+}
+
+.cruiseButtonDiv{
+  padding: .2rem;
+  text-align: right;
+  grid-area: theButton;
+}
+
+.cruiseButton{
+  #button1;
+  font-size: 1.5rem;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (@midSize) {
+  .cruiseGrid{
+    grid-template-areas: 
+    "theImage theText";
+   
+  }
+  .cruiseButton{
+    #button3;
+    width: unset;
+  }
+  .cruiseText{
+    padding-top: 0;
+    h2{margin-top: 0;}
+  }
+  .cruiseImage{
+    padding: 0 .75rem .75rem .75rem;
+  }
+}
+
+@media screen and (@largeSize) {
+  .cruiseButton{
+    #button2;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  .cruiseText{
+   p{
+    margin-bottom: .75rem;
+   }
+  }
+  .cruiseImage{
+    grid-area: theImage;
+    img{
+      max-width: 365px;
+    }
   }
 }

@@ -1,10 +1,10 @@
 @import "../less/variables.less";
 
-#titleFont{
+#titleFont {
   font-family: @titlesFont;
 }
 
-#paraFont{
+#paraFont {
   font-family: @commonFont;
 }
 
@@ -21,7 +21,6 @@
   transform: translateY(-100%);
   transition: transform 1s ease-in-out, visibility 0s 0.4s;
   transition: all 1s ease-in-out;
-
 }
 
 #links {
@@ -30,10 +29,41 @@
   text-decoration: none;
 }
 
-#blogBackground{
+#blogBackground {
   background-repeat: no-repeat;
   background-size: cover !important;
-  transition: linear .2s;
-  
+  transition: linear 0.2s;
 }
 
+#gridIt {
+  display: grid;
+  gap: 5px;
+}
+
+#button1{
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: @mainStyleColor;
+  outline: @accentStyleColor !important;
+  border: 4px solid @accentStyleColor;
+}
+
+#button2 {
+  background-color: @mainStyleColor;
+  padding: 0.28rem 0.2rem;
+  outline: @accentStyleColor !important;
+  border: 3.5px solid @accentStyleColor;
+  border-top: 3px solid @accentStyleColor;
+  margin-left: -0.5rem;
+  margin-top: -0.2rem;
+}
+
+#button3{
+  background-color: @mainStyleColor;
+  outline: @accentStyleColor !important;
+  border-radius: 15px;
+}

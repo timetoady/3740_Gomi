@@ -27,3 +27,27 @@
   background-size: cover !important;
   transition: linear 0.2s;
 }
+#gridIt {
+  display: grid;
+  gap: 5px;
+}
+#button1 {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #FFD700;
+  outline: black !important;
+  border: 4px solid black;
+}
+#button2 {
+  background-color: #FFD700;
+  padding: 0.28rem 0.2rem;
+  outline: black !important;
+  border: 3.5px solid black;
+  border-top: 3px solid black;
+  margin-left: -0.5rem;
+  margin-top: -0.2rem;
+}
