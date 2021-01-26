@@ -3,9 +3,11 @@ $title= 'Cabot Cruises: Cruises';
 include '_top.php'; 
 ?>
 
-    <h1 class="pageTitle">Cruises</h1>
+    
 
     <div class="gridContainer">
+        
+    <h1 class="pageTitle">Cruises</h1>
 
         <div class="cruiseGrid">
             <div class="cruiseImage">
