@@ -105,7 +105,7 @@ window.addEventListener("load", () => {
     let currentPageBit = splitLocation[splitLocation.length - 1]
     console.log(`Current page stub: ${currentPageBit}`)
     console.log(`This link: ${link.href}`)
-    link.href.includes(currentPageBit) 
+    link.href.includes(currentPageBit) && link.href.includes('#') === false
       ? link.classList.add("activeLink")
       : link.classList.remove("activeLink");
   });

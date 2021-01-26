@@ -34,11 +34,11 @@
                             <li><a href="cruises.php">CRUISES</a></li>
                             <li><a class="agentSubLink" href="#">AGENTS►</a>
                                 <ul class="agentSubMenu close">
-                                    <li><a href="#">SECRET AGENTS</a> </li>
-                                    <li><a href="#">CHANGE AGENTS</a> </li>
+                                    <li><a href="agent1.php">SECRET AGENTS</a> </li>
+                                    <li><a href="agent2.php">CHANGE AGENTS</a> </li>
                                 </ul>
                             </li>
-                            <li><a href="#">BOOK</a></li>
+                            <li><a href="book.php">BOOK</a></li>
                         </ul>
                     </div>
 
@@ -48,10 +48,13 @@
 
             <div class="logo">
                 <div>
+                    <a href="index.php">
                     <img srcset="./assets/images/cabotCruises1.png,
                         ./assets/images/cabotCruises@2x.png 2x,
                         ./assets/images/cabotCruises@3x.png 3x" src="./assets/images/cabotCruises1.png"
                         alt="Cabot Cruises Logo">
+                    </a>
+
                 </div>
 
 

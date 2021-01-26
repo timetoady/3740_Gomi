@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
-</head>
-
-<body>
+<?php 
+$title= 'Cabot Cruises: Cruises';
+include '_top.php'; 
+?>
 
     <h1 class="pageTitle">Cruises</h1>
 
@@ -16,7 +9,7 @@
 
         <div class="cruiseGrid">
             <div class="cruiseImage">
-                <img src="/assets/images/cruise1.jpg" alt="River Cruise">
+                <img src="./assets/images/cruise1.jpg" alt="River Cruise">
             </div>
             <div class="cruiseText">
                 <h2>
@@ -39,7 +32,7 @@
 
         <div class="cruiseGrid">
             <div class="cruiseImage">
-                <img src="/assets/images/cruise2.jpg" alt="River Cruise">
+                <img src="./assets/images/cruise2.jpg" alt="River Cruise">
             </div>
             <div class="cruiseText">
                 <h2>
@@ -60,7 +53,7 @@
 
         <div class="cruiseGrid">
             <div class="cruiseImage">
-                <img src="/assets/images/cruise3.jpg" alt="River Cruise">
+                <img src="./assets/images/cruise3.jpg" alt="River Cruise">
             </div>
             <div class="cruiseText">
                 <h2>
@@ -81,7 +74,7 @@
 
         <div class="cruiseGrid">
             <div class="cruiseImage">
-                <img src="/assets/images/cruise5.jpg" alt="River Cruise">
+                <img src="./assets/images/cruise5" alt="River Cruise">
             </div>
             <div class="cruiseText">
                 <h2>
@@ -105,4 +98,4 @@
 
 </body>
 
-</html>
+<?php include '_bot.php'; ?>
