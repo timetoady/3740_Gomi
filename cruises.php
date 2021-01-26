@@ -6,12 +6,12 @@ include '_top.php';
     
 
     <div class="gridContainer">
-        
+
     <h1 class="pageTitle">Cruises</h1>
 
         <div class="cruiseGrid">
             <div class="cruiseImage">
-                <img src="./assets/images/cruise1.jpg" alt="River Cruise">
+                <img src="./assets/images/cruise1.jpg" alt="AmaWaterways River Cruise">
             </div>
             <div class="cruiseText">
                 <h2>
@@ -34,7 +34,7 @@ include '_top.php';
 
         <div class="cruiseGrid">
             <div class="cruiseImage">
-                <img src="./assets/images/cruise2.jpg" alt="River Cruise">
+                <img src="./assets/images/cruise2.jpg" alt="Disney Eastern Caribbean Cruise">
             </div>
             <div class="cruiseText">
                 <h2>
@@ -55,7 +55,7 @@ include '_top.php';
 
         <div class="cruiseGrid">
             <div class="cruiseImage">
-                <img src="./assets/images/cruise3.jpg" alt="River Cruise">
+                <img src="./assets/images/cruise3.jpg" alt="Holland America Alaskan Explorer">
             </div>
             <div class="cruiseText">
                 <h2>
@@ -76,7 +76,7 @@ include '_top.php';
 
         <div class="cruiseGrid">
             <div class="cruiseImage">
-                <img src="./assets/images/cruise5" alt="River Cruise">
+                <img src="./assets/images/cruise5.jpg" alt="Princess Cruises Japan Explorer">
             </div>
             <div class="cruiseText">
                 <h2>
