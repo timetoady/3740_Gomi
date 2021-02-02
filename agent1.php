@@ -14,7 +14,7 @@ include '_top.php';
                 </p>
                 <h3>Working:</h3>
                 <p>Mondays, Tuesdays, and Thursdays</p>
-                <h3>Destnation Specialization:</h3>
+                <h3>Destination Specialization:</h3>
                 <p>Caribbean, Southern California, Netherlands, Acapoco, Easter Island, Alaska</p>
                 <h3>Offic Hours:</h3>
                 <p>9:55 AM to 7:36 PM</p>

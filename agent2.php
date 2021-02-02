@@ -14,7 +14,7 @@ include '_top.php';
                 </p>
                 <h3>Working:</h3>
                 <p>Wednesdays, Fridays, Leap days, and Holidays</p>
-                <h3>Destnation Specialization:</h3>
+                <h3>Destination Specialization:</h3>
                 <p>South America, Japan, Iceland, Bermuda, Antartica, the Sahara, Russia, Malaysia, and Pakistani Cruises.</p>
                 <h3>Offic Hours:</h3>
                 <p>12:00 PM to 12:00 AM</p>
