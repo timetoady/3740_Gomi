@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <!-- <title>Cabot Cruises</title> -->
+    <title> <?php echo($title); ?> </title>
 </head>
 
 <body>
