@@ -34,8 +34,8 @@
                             <li><a href="cruises.php">CRUISES</a></li>
                             <li><a class="agentSubLink" href="#">AGENTS►</a>
                                 <ul class="agentSubMenu close">
-                                    <li><a href="agent1.php">SECRET AGENTS</a> </li>
-                                    <li><a href="agent2.php">CHANGE AGENTS</a> </li>
+                                    <li><a href="agent1.php">CHRISTINE</a> </li>
+                                    <li><a href="agent2.php">ROSENCRAYONS</a> </li>
                                 </ul>
                             </li>
                             <li><a href="book.php">BOOK</a></li>

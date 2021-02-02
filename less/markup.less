@@ -495,7 +495,55 @@ footer {
   margin-bottom: 1.5rem;
 }
 
+.agentArea{
+  .padding{
+    padding: .25rem;
+  }
+  h1{
+    font-size: 1.5rem;
+    margin: 1rem 0 0 .2rem;
+    font-family: @titlesFont;
+  }
+  h3{
+    font-family: @titlesFont;
+    margin-bottom: 0;
+  }
+  h4{
+    margin: 0;
+    font-weight: 400;
+    font-family: @commonFont;
+  }
+  a{
+    #links;
+    color: black;
+  }
+  p{
+    margin-top: 0;
+    font-family: @commonFont;
+  }
+  .quoteAttribute{
+    margin-top: 0;
+    margin-left: .2rem;
+  }
+
+  .agentImage{
+    max-width: 100%;
+  }
+}
+
+
+
 @media screen and (@midSize) {
+  .agentArea{
+    padding: .2rem;
+    max-width: 1200px;
+    .agentImage{
+      max-width: 30rem;
+      float: right;
+    }
+  }
+
+
   .cruiseGrid{
     grid-template-areas: 
     "theImage theText";

@@ -147,15 +147,13 @@ header {
   border: 3.5px solid black;
 }
 .mainMenu #searchDiv button {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 20px;
-  margin: 0.75rem 0;
-  font-size: 1rem;
-  font-weight: 700;
   background-color: #FFD700;
+  padding: 0.28rem 0.2rem;
   outline: black !important;
-  border: 4px solid black;
+  border: 3.5px solid black;
+  border-top: 3px solid black;
+  margin-left: -0.5rem;
+  margin-top: -0.2rem;
 }
 .mainMenu .menuLinks {
   padding: 0;
@@ -463,6 +461,8 @@ footer {
   display: grid;
   gap: 5px;
   gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .cruiseGrid {
   display: grid;
@@ -501,6 +501,7 @@ footer {
   background-color: #FFD700;
   outline: black !important;
   border: 4px solid black;
+  font-size: 1.5rem;
   max-width: 100%;
   margin-bottom: 1.5rem;
 }
@@ -513,5 +514,36 @@ footer {
     outline: black !important;
     border-radius: 15px;
     width: unset;
+  }
+  .cruiseText {
+    padding-top: 0;
+  }
+  .cruiseText h2 {
+    margin-top: 0;
+  }
+  .cruiseImage {
+    padding: 0 0.75rem 0.75rem 0.75rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .cruiseButton {
+    background-color: #FFD700;
+    padding: 0.28rem 0.2rem;
+    outline: black !important;
+    border: 3.5px solid black;
+    border-top: 3px solid black;
+    margin-left: -0.5rem;
+    margin-top: -0.2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  .cruiseText p {
+    margin-bottom: 0.75rem;
+  }
+  .cruiseImage {
+    grid-area: theImage;
+  }
+  .cruiseImage img {
+    max-width: 365px;
   }
 }
