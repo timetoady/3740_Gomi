@@ -481,7 +481,46 @@ footer {
 .agentArea .agentImage {
   max-width: 100%;
 }
+.bookingBox form {
+  margin: 1%;
+}
+.bookingBox form h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+.bookingBox form label {
+  font-size: smaller;
+  font-style: italic;
+}
+.bookingBox form input,
+.bookingBox form select {
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+  margin-top: 0;
+  background-color: #f2f2f2bc;
+  border-radius: 6px;
+}
+.bookingBox form select {
+  width: 100%;
+  padding: 1px 2px;
+}
+.bookingBox form input {
+  width: 98%;
+}
+.bookingBox form .bookButton {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #FFD700;
+  outline: black !important;
+  border: 4px solid black;
+}
 @media screen and (min-width: 700px) {
+  .bookingBox form {
+    max-width: 66%;
+  }
   .agentArea {
     padding: 0.2rem;
     max-width: 1200px;
@@ -510,6 +549,13 @@ footer {
   }
 }
 @media screen and (min-width: 1000px) {
+  .bookingBox form {
+    max-width: 33%;
+  }
+  .bookingBox form input,
+  .bookingBox form select {
+    font-size: 1.25rem;
+  }
   .cruiseButton {
     background-color: #FFD700;
     padding: 0.28rem 0.2rem;

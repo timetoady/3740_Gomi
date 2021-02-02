@@ -38,7 +38,7 @@
                                     <li><a href="agent2.php">ROSENCRAYONS</a> </li>
                                 </ul>
                             </li>
-                            <li><a href="book.php">BOOK</a></li>
+                            <li><a href="booking.php">BOOK</a></li>
                         </ul>
                     </div>
 

@@ -2,7 +2,6 @@
 @import "../less/mixins.less";
 
 //General settings
-
 html {
   margin: 0;
 }
@@ -335,19 +334,16 @@ footer {
       padding: 0 0.5rem;
     }
 
-    .activeLink{
+    .activeLink {
       //background-color: lighter(@mainStyleColor, 20%) !important;
       background-color: #f4f4f48c;
-
     }
-    
+
     #searchDiv {
-      
-        button {
-          padding: 0.28rem 0.2rem;
-          margin-top: 0 !important;
-        }
-      
+      button {
+        padding: 0.28rem 0.2rem;
+        margin-top: 0 !important;
+      }
     }
 
     .menuLinks {
@@ -391,7 +387,6 @@ footer {
         margin: 0;
       }
     }
-    
   }
   .blogsDiv {
     grid-template-columns: 1fr 1fr 1fr;
@@ -441,141 +436,185 @@ footer {
   }
 }
 
-
 //Cruise page
-.pageTitle{
+.pageTitle {
   font-family: @titlesFont;
-  
 }
 
-.gridContainer{
+.gridContainer {
   #gridIt;
   gap: 10px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.cruiseGrid{
+.cruiseGrid {
   #gridIt;
-  grid-template-areas: 
-  "theImage"
-  "theText"
-  "theButton";
+  grid-template-areas:
+    "theImage"
+    "theText"
+    "theButton";
 }
 
-.cruiseImage{
+.cruiseImage {
   grid-area: theImage;
-  img{
+  img {
     max-width: 100%;
   }
 }
 
-.cruiseText{
-  padding: .2rem;
+.cruiseText {
+  padding: 0.2rem;
   grid-area: theText;
-  h2{
+  h2 {
     font-family: @titlesFont;
   }
-  p{
+  p {
     font-family: @commonFont;
-    margin-bottom: .1rem;
+    margin-bottom: 0.1rem;
   }
 }
 
-.cruiseButtonDiv{
-  padding: .2rem;
+.cruiseButtonDiv {
+  padding: 0.2rem;
   text-align: right;
   grid-area: theButton;
 }
 
-.cruiseButton{
+.cruiseButton {
   #button1;
   font-size: 1.5rem;
   max-width: 100%;
   margin-bottom: 1.5rem;
 }
 
-.agentArea{
-  .padding{
-    padding: .25rem;
+//Agents Pages
+.agentArea {
+  .padding {
+    padding: 0.25rem;
   }
-  h1{
+  h1 {
     font-size: 1.5rem;
-    margin: 1rem 0 0 .2rem;
+    margin: 1rem 0 0 0.2rem;
     font-family: @titlesFont;
   }
-  h3{
+  h3 {
     font-family: @titlesFont;
     margin-bottom: 0;
   }
-  h4{
+  h4 {
     margin: 0;
     font-weight: 400;
     font-family: @commonFont;
   }
-  a{
+  a {
     #links;
     color: black;
   }
-  p{
+  p {
     margin-top: 0;
     font-family: @commonFont;
   }
-  .quoteAttribute{
+  .quoteAttribute {
     margin-top: 0;
-    margin-left: .2rem;
+    margin-left: 0.2rem;
   }
 
-  .agentImage{
+  .agentImage {
     max-width: 100%;
   }
 }
 
-
+//Booking page
+.bookingBox {
+  form {
+    margin: 1%;
+    h1 {
+      font-family: @titlesFont;
+    }
+    label {
+      font-size: smaller;
+      font-style: italic;
+    }
+    input,
+    select {
+      margin-bottom: 0.75rem;
+      font-size: 1.75rem;
+      margin-top: 0;
+      background-color: #f2f2f2bc;
+      border-radius: 6px;
+    }
+    select {
+      width: 100%;
+      padding: 1px 2px;
+    }
+    input {
+      width: 98%;
+    }
+    .bookButton {
+      #button1;
+    }
+  }
+}
 
 @media screen and (@midSize) {
-  .agentArea{
-    padding: .2rem;
+  .bookingBox {
+    form {
+      max-width: 66%;
+    }
+  }
+
+  .agentArea {
+    padding: 0.2rem;
     max-width: 1200px;
-    .agentImage{
+    .agentImage {
       max-width: 30rem;
       float: right;
     }
   }
 
-
-  .cruiseGrid{
-    grid-template-areas: 
-    "theImage theText";
-   
+  .cruiseGrid {
+    grid-template-areas: "theImage theText";
   }
-  .cruiseButton{
+  .cruiseButton {
     #button3;
     width: unset;
   }
-  .cruiseText{
+  .cruiseText {
     padding-top: 0;
-    h2{margin-top: 0;}
+    h2 {
+      margin-top: 0;
+    }
   }
-  .cruiseImage{
-    padding: 0 .75rem .75rem .75rem;
+  .cruiseImage {
+    padding: 0 0.75rem 0.75rem 0.75rem;
   }
 }
 
 @media screen and (@largeSize) {
-  .cruiseButton{
+  .bookingBox {
+    form {
+      max-width: 33%;
+      input,
+      select {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .cruiseButton {
     #button2;
     font-size: 1rem;
     border-radius: 10px;
   }
-  .cruiseText{
-   p{
-    margin-bottom: .75rem;
-   }
+  .cruiseText {
+    p {
+      margin-bottom: 0.75rem;
+    }
   }
-  .cruiseImage{
+  .cruiseImage {
     grid-area: theImage;
-    img{
+    img {
       max-width: 365px;
     }
   }

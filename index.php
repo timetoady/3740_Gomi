@@ -1,5 +1,5 @@
 <?php 
-$title= 'Cabot Cruises!';
+$title= 'Cabot Cruises';
 include '_top.php'; 
 ?>
     <div id="container">
