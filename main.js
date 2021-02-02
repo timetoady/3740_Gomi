@@ -90,7 +90,6 @@ $(document).ready(function () {
 // });
 // };
 
-
 // $(function () {
 //   $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
 //     "activeLink"
@@ -98,16 +97,29 @@ $(document).ready(function () {
 // });
 
 let theNav = document.querySelectorAll(".menuLinks a");
+const homeLink = document.querySelector(".homeLink");
+const agentLink = document.querySelector(".agentSubLink");
 window.addEventListener("load", () => {
+  let splitLocation = window.location.href.split("/");
+  let currentPageBit = splitLocation[splitLocation.length - 1];
+  console.log("Current page bit", currentPageBit);
+  console.log(`Last char of current page bit is: ${currentPageBit.slice(-1)}`);
   [...theNav].forEach((link) => {
-    let splitLocation = window.location.href.split("/")
-    console.log(splitLocation)
-    let currentPageBit = splitLocation[splitLocation.length - 1]
-    console.log(`Current page stub: ${currentPageBit}`)
-    console.log(`This link: ${link.href}`)
-    link.href.includes(currentPageBit) && link.href.includes('#') === false
-      ? link.classList.add("activeLink")
-      : link.classList.remove("activeLink");
+    if (
+      link.href.includes(currentPageBit) &&
+      link.href.includes("#") === false &&
+      currentPageBit.slice(-1) !== ""
+    ) {
+      link.classList.add("activeLink");
+    } else {
+      link.classList.remove("activeLink");
+    }
+    if (currentPageBit.slice(-1) === "") {
+      homeLink.classList.add("activeLink");
+    }
+    if (currentPageBit.includes("agent")) {
+      agentLink.classList.add("activeLink");
+    }
   });
 });
 
