@@ -76,26 +76,8 @@ $(document).ready(function () {
   });
 });
 
-//Active link
-// const setActive = (currentURL) => {
-//   let theNav = document.querySelectorAll(".menuLinks a");
-// [...theNav].forEach((link) => {
-//   link.addEventListener('click', () => {
-//     console.log(`Clicked link ${link}!`)
 
-//     let url = link.getAttribute('href');
-//     currentURL.includes(url) ? link.classList.add('activeLink') : link.classList.remove('activeLink')
-//   })
-
-// });
-// };
-
-// $(function () {
-//   $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
-//     "activeLink"
-//   );
-// });
-
+//Big stupid active page link controller
 let theNav = document.querySelectorAll(".menuLinks a");
 const homeLink = document.querySelector(".homeLink");
 const agentLink = document.querySelector(".agentSubLink");
@@ -123,22 +105,3 @@ window.addEventListener("load", () => {
   });
 });
 
-// window.addEventListener("load", () => {
-//   // window.location.href.includes(url)
-//   //   ? link.classList.add("activeLink")
-//   //   : link.classList.remove("activeLink");
-//   setTimeout(() => {
-//     [...theNav].forEach((link) => {
-//       let url = link.getAttribute("href");
-//       console.log(url);
-//       console.log(window.location.href);
-//       if (window.location.href.includes(url)) {
-//         link.classList.add("activeLink");
-//         console.log(`added active to ${link}`);
-//       } else {
-//         link.classList.remove("activeLink");
-//         console.log(`Link ${link} not active.`);
-//       }
-//     }, 7000);
-//   });
-// });
