@@ -1,10 +1,10 @@
 <?php 
-$title= 'Cabot Cruises: Agent Christine Johnston';
+$title= 'Cabot Cruises: Agent — Christine Johnston';
 include '_top.php'; 
 ?>
 
     <div class="gridContainer agentArea">
-        <h1>Agent — Christine Johnston </h1>
+        <h1>Agent — Christine Johnston</h1>
         <div>
             <img src="./assets/images/agent1.jpg" alt="Agent Christine Johnston" class="agentImage">
             <div class="padding">

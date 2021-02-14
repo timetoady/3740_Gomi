@@ -71,7 +71,7 @@ header {
   max-width: 1200px !important;
 }
 
-.numberDiv {
+#numberDiv {
   display: none;
 }
 
@@ -319,7 +319,11 @@ footer {
     margin: 0.2rem auto;
   }
 
-  .numberDiv {
+  .logoBox{
+    padding-left: 1rem;
+  }
+
+  #numberDiv {
     display: block;
     a {
       #links;
@@ -327,8 +331,9 @@ footer {
       font-size: 1.5rem;
       position: absolute;
       bottom: 0;
-      right: 0;
+      right: 20px;
     }
+    
   }
 
   .mainMenu {
@@ -346,7 +351,9 @@ footer {
       button {
         padding: 0.28rem 0.2rem;
         margin-top: 0 !important;
+        
       }
+      padding-right: 12px;
     }
 
     .menuLinks {
@@ -436,6 +443,14 @@ footer {
   .footerGrid {
     gap: 10px;
     grid-template-areas: "contact newsletter why";
+  }
+  
+}
+
+@media screen and (min-width: 1220px) {
+  #searchDiv, #numberDiv a{
+    right: 0 !important;
+    padding-right: 0 !important;
   }
 }
 

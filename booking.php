@@ -1,11 +1,11 @@
 <?php
-$title = 'Cabot Cruises: Booking';
+$title = 'Cabot Cruises: Booking A Cruise';
 include '_top.php';
 ?>
 
 <div class="gridContainer bookingBox">
     <form action="/">
-        <h1>Book A Cruise</h1>
+        <h1>Booking A Cruise</h1>
         <div class="item">
             <label for="name">Full Name</label>
             <div class="name-item">

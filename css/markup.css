@@ -332,6 +332,10 @@ footer {
   text-align: center;
   margin: 0.1rem 0 1rem 0;
 }
+.activeLink {
+  font-style: italic !important;
+  background: linear-gradient(to bottom, rgba(254, 255, 255, 0) 4%, rgba(244, 244, 244, 0.35) 20%, rgba(255, 217, 0, 0.63) 33%, rgba(244, 244, 244, 0.85) 43%, #f4f4f4 50%, rgba(244, 244, 244, 0.8) 59%, rgba(255, 217, 0, 0.65) 66%, rgba(244, 244, 244, 0.37) 79%, rgba(160, 216, 239, 0.02) 95%, rgba(160, 216, 239, 0) 96%) !important;
+}
 @media screen and (min-width: 700px) {
   header {
     display: grid;
@@ -347,6 +351,9 @@ footer {
     position: relative;
     margin: 0.2rem auto;
   }
+  .logoBox {
+    padding-left: 1rem;
+  }
   .numberDiv {
     display: block;
   }
@@ -358,7 +365,7 @@ footer {
     font-size: 1.5rem;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 20px;
   }
   .mainMenu {
     background-color: #FFD700;
@@ -369,8 +376,8 @@ footer {
     max-width: 1200px;
     padding: 0 0.5rem;
   }
-  .mainMenu .activeLink {
-    background-color: #f4f4f48c;
+  .mainMenu #searchDiv {
+    padding-right: 20px;
   }
   .mainMenu #searchDiv button {
     padding: 0.28rem 0.2rem;
@@ -453,6 +460,11 @@ footer {
     gap: 10px;
     grid-template-areas: "contact newsletter why";
   }
+  #searchDiv,
+  .numberDiv {
+    right: 0px !important;
+    padding-right: 0 !important;
+  }
 }
 .pageTitle {
   font-family: 'Montserrat', sans-serif;
@@ -505,7 +517,88 @@ footer {
   max-width: 100%;
   margin-bottom: 1.5rem;
 }
+.agentArea .padding {
+  padding: 0.25rem;
+}
+.agentArea h1 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.agentArea h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+}
+.agentArea h4 {
+  margin: 0;
+  font-weight: 400;
+  font-family: 'Piazzolla', serif;
+}
+.agentArea a {
+  list-style: none;
+  text-emphasis: none;
+  text-decoration: none;
+  color: black;
+}
+.agentArea p {
+  margin-top: 0;
+  font-family: 'Piazzolla', serif;
+}
+.agentArea .quoteAttribute {
+  margin-top: 0;
+  margin-left: 0.2rem;
+}
+.agentArea .agentImage {
+  max-width: 100%;
+}
+.bookingBox form {
+  margin: 1%;
+}
+.bookingBox form h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+.bookingBox form label {
+  font-size: smaller;
+  font-style: italic;
+}
+.bookingBox form input,
+.bookingBox form select {
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+  margin-top: 0;
+  background-color: #f2f2f2bc;
+  border-radius: 6px;
+}
+.bookingBox form select {
+  width: 100%;
+  padding: 1px 2px;
+}
+.bookingBox form input {
+  width: 98%;
+}
+.bookingBox form .bookButton {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #FFD700;
+  outline: black !important;
+  border: 4px solid black;
+}
 @media screen and (min-width: 700px) {
+  .bookingBox form {
+    max-width: 66%;
+  }
+  .agentArea {
+    padding: 0.2rem;
+    max-width: 1200px;
+  }
+  .agentArea .agentImage {
+    max-width: 30rem;
+    float: right;
+  }
   .cruiseGrid {
     grid-template-areas: "theImage theText";
   }
@@ -526,6 +619,13 @@ footer {
   }
 }
 @media screen and (min-width: 1000px) {
+  .bookingBox form {
+    max-width: 33%;
+  }
+  .bookingBox form input,
+  .bookingBox form select {
+    font-size: 1.25rem;
+  }
   .cruiseButton {
     background-color: #FFD700;
     padding: 0.28rem 0.2rem;

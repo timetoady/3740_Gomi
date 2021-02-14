@@ -47,7 +47,7 @@
             </nav>
 
             <div class="logo">
-                <div>
+                <div class="logoBox">
                     <a href="index.php">
                     <img srcset="./assets/images/cabotCruises1.png,
                         ./assets/images/cabotCruises@2x.png 2x,
@@ -58,7 +58,7 @@
                 </div>
 
 
-                <div class="numberDiv">
+                <div id="numberDiv">
                     <a href="tel:1-800-555-1234">1-800-555-1234</a>
                 </div>
 

@@ -52,7 +52,7 @@ header {
 .logo img {
   max-width: 250px;
 }
-.numberDiv {
+#numberDiv {
   display: none;
 }
 .slideImageDiv {
@@ -293,10 +293,13 @@ footer {
     position: relative;
     margin: 0.2rem auto;
   }
-  .numberDiv {
+  .logoBox {
+    padding-left: 1rem;
+  }
+  #numberDiv {
     display: block;
   }
-  .numberDiv a {
+  #numberDiv a {
     list-style: none;
     text-emphasis: none;
     text-decoration: none;
@@ -304,7 +307,7 @@ footer {
     font-size: 1.5rem;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 20px;
   }
   .mainMenu {
     background-color: #FFD700;
@@ -314,6 +317,9 @@ footer {
     margin-bottom: 0;
     max-width: 1200px;
     padding: 0 0.5rem;
+  }
+  .mainMenu #searchDiv {
+    padding-right: 12px;
   }
   .mainMenu #searchDiv button {
     padding: 0.28rem 0.2rem;
@@ -395,6 +401,13 @@ footer {
   .footerGrid {
     gap: 10px;
     grid-template-areas: "contact newsletter why";
+  }
+}
+@media screen and (min-width: 1220px) {
+  #searchDiv,
+  #numberDiv a {
+    right: 0 !important;
+    padding-right: 0 !important;
   }
 }
 .pageTitle {
