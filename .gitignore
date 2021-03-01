@@ -1,6 +1,9 @@
 #nodes and files
 node_modules
 vendor
+wp-content
+_notes
+slider
 
 # Enviroment variables
 .env

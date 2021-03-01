@@ -1,6 +1,6 @@
 {
-    "watchFolder": "less",   
-    "outputFolder": "css",
+    "watchFolder": "./wp-content/themes/cabotCruisesTheme/less",   
+    "outputFolder": "./wp-content/themes/cabotCruisesTheme/css",
     "minified": false,   
     "sourceMap": false,
     "runOnce": false,
